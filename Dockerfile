@@ -1,5 +1,5 @@
 # デプロイ用コンテナに含めるバイナリを作成するコンテナ
-FROM golang:1.18.2-bullseye as deploy-builder
+FROM golang:1.23-bullseye as deploy-builder
 
 WORKDIR /app
 
@@ -22,7 +22,7 @@ CMD ["./app"]
 # ---------------------------------------------------
 # 開発用コンテナ
 
-FROM golang:1.24 as dev
+FROM golang:1.23 as dev
 WORKDIR /app
 RUN go install github.com/air-verse/air@latest
 # 開発用コンテナでは、airコマンドを使用して、ホットリロードを行う
