@@ -1,8 +1,8 @@
 module github.com/shinnkura/go_todo_app
 
-go 1.23.0
+go 1.24
 
-toolchain go1.23.9
+toolchain go1.24.3
 
 require (
 	github.com/caarlos0/env/v6 v6.10.1
@@ -20,8 +20,11 @@ require (
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
+	github.com/matryer/moq v0.5.3 // indirect
 	golang.org/x/crypto v0.38.0 // indirect
+	golang.org/x/mod v0.24.0 // indirect
 	golang.org/x/net v0.40.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
+	golang.org/x/tools v0.33.0 // indirect
 )
